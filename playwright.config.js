@@ -18,7 +18,7 @@ export default defineConfig({
       use: {
         browserName: 'chromium',
         channel: 'chrome',   // ✅ launches real Chrome (not Chromium)
-        headless: false,
+        headless: true,
         screenshot : 'on',
         trace:'on'
       },
