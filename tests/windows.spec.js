@@ -1,5 +1,4 @@
-const { test, expect, chromium } = require('@playwright/test');
-
+import { test, expect, request, chromium } from '@playwright/test';
 test('child window handling', async () => {
 
     const browser = await chromium.launch({

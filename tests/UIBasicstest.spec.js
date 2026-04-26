@@ -1,5 +1,4 @@
-const { test, expect } = require('@playwright/test');
-
+import { test, expect, request } from '@playwright/test';
 test('google chrome launch', async ({ page }) => {
 
     await page.goto('https://www.google.com');

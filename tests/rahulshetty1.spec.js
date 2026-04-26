@@ -1,5 +1,4 @@
-const { test, expect } = require('@playwright/test');
-
+import { test, expect } from '@playwright/test';
 test('rahulshetty - E2E Order Flow', async ({ page }) => {
 
     const email = "abc@gmail.com";

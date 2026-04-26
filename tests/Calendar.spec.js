@@ -1,4 +1,4 @@
-const{test,expect}=require('@playwright/test');
+import { test, expect } from '@playwright/test';
 test('Calendar test',async({page})=>{
     const month="May";
     const year="2024";
