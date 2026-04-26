@@ -5,12 +5,13 @@ pipeline {
         stage('Install') {
             steps {
                 bat 'npm install'
+                bat 'npx playwright install'
             }
         }
 
         stage('Test') {
             steps {
-                bat 'npx playwright test'
+                bat 'npx playwright test --reporter=line --headed=false'
             }
         }
     }
