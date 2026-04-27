@@ -2,16 +2,38 @@ pipeline {
     agent any
 
     stages {
-        stage('Install') {
+
+        stage('Checkout') {
             steps {
-                bat 'npm install'
-                bat 'npx playwright install'
+                git 'https://github.com/your-repo.git'
             }
         }
 
-        stage('Test') {
+        stage('Install Dependencies') {
             steps {
-                bat 'npx playwright test --reporter=line'
+                bat 'npm ci'
+            }
+        }
+
+        stage('Install Browsers') {
+            steps {
+                bat 'npx playwright install --with-deps'
+            }
+        }
+
+        stage('Run Tests') {
+            steps {
+                bat 'npx playwright test --reporter=html'
+            }
+        }
+
+        stage('Publish Report') {
+            steps {
+                publishHTML([
+                    reportDir: 'playwright-report',
+                    reportFiles: 'index.html',
+                    reportName: 'Playwright Report'
+                ])
             }
         }
     }
