@@ -1,9 +1,9 @@
 import { test, expect } from '@playwright/test';
 test('rahulshetty - E2E Order Flow', async ({ page }) => {
 
-    const email = "abc@gmail.com";
+    const email = "anshika@gmail.com";
     const productName = 'iphone 13 pro';
-    const password ="pl@ywright";
+    const password ="Iamking@000";
     // Launch application
     await page.goto("https://rahulshettyacademy.com/client");
 

@@ -17,7 +17,9 @@ test.beforeAll(async () => {
     // Login
     const loginResponse = await apiContext.post(
         "https://rahulshettyacademy.com/api/ecom/auth/login",
-        { data: loginPayLoad }
+        { 
+            data: loginPayLoad 
+        }
     );
 
     expect(loginResponse.ok()).toBeTruthy();
@@ -27,7 +29,7 @@ test.beforeAll(async () => {
 
     // Create Order
     const orderResponse = await apiContext.post(
-        "https://rahulshettyacademy.com/api/ecom/order/create-order",
+        "https://rahulshettyacademy./api/ecom/order/create-order",
         {
             data: orderPayLoad,
             headers: {

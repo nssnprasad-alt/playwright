@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('Radio button handling', async ({ page }) => {
+test('@web Radio button handling', async ({ page }) => {
 
     await page.goto('https://demoqa.com/radio-button');
 

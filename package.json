@@ -3,13 +3,22 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test",
+    "webtests": "npx playwright test --grep \"@web\"",
+    "htmlreport": "npx playwright test --reporter=html",
+    "rahulweb": "npx playwright test tests/rahulframe.spec.js --grep \"@web\" --reporter=html",
+    "showreport": "npx playwright show-report"
+    
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "devDependencies": {
-    "@playwright/test": "^1.59.1",
-    "@types/node": "^25.5.0"
+    "@cucumber/cucumber": "^12.9.0",
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.5.0",
+    "allure-playwright": "^3.8.0"
   }
 }

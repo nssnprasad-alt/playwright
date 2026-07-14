@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-test("Rahul's Test", async ({ page }) => {
+test(" @Web Rahul's Test", async ({ page }) => {
     await page.goto("https://rahulshettyacademy.com/client");
 
     await page.locator("#userEmail").fill("anshika@gmail.com");

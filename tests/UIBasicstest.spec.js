@@ -1,5 +1,5 @@
 import { test, expect, request } from '@playwright/test';
-test('google chrome launch', async ({ page }) => {
+test('@web Google Chrome launch', async ({ page }) => {
 
     await page.goto('https://www.google.com');
 

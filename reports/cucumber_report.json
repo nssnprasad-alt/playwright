@@ -1,0 +1,291 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "ecomerce-validations;scenario-outline-name:-placing-the-order-with-valid-data",
+        "keyword": "Scenario Outline",
+        "line": 15,
+        "name": "Scenario Outline name: Placing the order with valid data",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1077091599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "Login a Ecomerce application with valid  \"anshika@gmail.com\" and \"Iamking@000\"",
+            "match": {
+              "location": "features\\stepdefination\\steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2048046198
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Add \"zara coat 3\" to the cart and checkout",
+            "match": {
+              "location": "features\\stepdefination\\steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2021515099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Verify \"Zara Coat 3\" is displayed in the cart",
+            "match": {
+              "location": "features\\stepdefination\\steps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73097600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "Enter valid details and place the order",
+            "match": {
+              "location": "features\\stepdefination\\steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 869503599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "verify order in present in OrderHistoryPage",
+            "match": {
+              "location": "features\\stepdefination\\steps.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 109504699
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 462400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "ecomerce-validations;scenario-outline-name:-placing-the-order-with-valid-data",
+        "keyword": "Scenario Outline",
+        "line": 16,
+        "name": "Scenario Outline name: Placing the order with valid data",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 984508600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "Login a Ecomerce application with valid  \"navya@gmail.com\" and \"Navya@000\"",
+            "match": {
+              "location": "features\\stepdefination\\steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2699309599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Add \"zara coat 3\" to the cart and checkout",
+            "match": {
+              "location": "features\\stepdefination\\steps.js:14"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5013832499,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\ADMIN\\playwright-project\\node_modules\\@cucumber\\cucumber\\lib\\time.js:64:20)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Verify \"Zara Coat 3\" is displayed in the cart",
+            "match": {
+              "location": "features\\stepdefination\\steps.js:20"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "Enter valid details and place the order",
+            "match": {
+              "location": "features\\stepdefination\\steps.js:25"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "verify order in present in OrderHistoryPage",
+            "match": {
+              "location": "features\\stepdefination\\steps.js:31"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 290100
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "ecomerce-validations",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Ecomerce Validations",
+    "tags": [],
+    "uri": "features\\Ecomerce.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "validate-facebook-login;login-with-validate-credientiasls",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Login with validate Credientiasls",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1792863399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "Login a Facebook application with valid credientials \"navay@gmail.com\" and \"navya096\"",
+            "match": {
+              "location": "features\\stepdefination\\facebook.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1766930198
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Click on login button",
+            "match": {
+              "location": "features\\stepdefination\\facebook.js:20"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5007037700,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\ADMIN\\playwright-project\\node_modules\\@cucumber\\cucumber\\lib\\time.js:64:20)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "vertify user is able to login successfully",
+            "match": {
+              "location": "features\\stepdefination\\facebook.js:28"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 668999
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "validate-facebook-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Validate Facebook Login",
+    "tags": [],
+    "uri": "features\\Facebook.feature"
+  }
+]

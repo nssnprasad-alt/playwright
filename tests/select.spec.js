@@ -1,4 +1,4 @@
-import { test, expect, request } from '@playwright/test';
+import { test, expect, request, chromium } from '@playwright/test';
 test('slow execution', async () => {
 
     const browser = await chromium.launch({

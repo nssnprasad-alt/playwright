@@ -1,4 +1,4 @@
-import { defineConfig } from '@playwright/test';
+import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
   testDir: './tests',
@@ -16,6 +16,19 @@ export default defineConfig({
       name: 'Google Chrome',
       reporter:'html',
       use: {
+          // viewport: { width: 390, height: 844 },
+          // ...devices['iPad (gen 11)'],
+          //  permissions: ['geolocation'],   // allow permissions
+
+        // ignoreHTTPSErrors: true,        // ignore SSL/HTTPS errors
+        // video: 'on-first-retry'   ,   // save on retry
+        //  video: 'retain-on-failure',
+
+    // screenshot: 'only-on-failure',
+
+    // trace: 'on-first-retry'
+    // retries: 1,   // retry once if failed
+
         browserName: 'chromium',
         channel: 'chrome',   // ✅ launches real Chrome (not Chromium)
         headless: true,

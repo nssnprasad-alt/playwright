@@ -17,6 +17,7 @@ test('rahulshetty', async ({ page }) => {
 
     const count = await products.count();
 
+    
     for (let i = 0; i < count; i++) {
 
         if (await products.nth(i).locator("b").textContent() === productName) {

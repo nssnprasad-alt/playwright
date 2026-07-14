@@ -1,4 +1,5 @@
-import { test, expect } from '@playwright/test';test('Rahul test',async({page})=>{
+import { test, expect } from '@playwright/test';
+test('Rahul test',async({page})=>{
     await page.goto("https://rahulshettyacademy.com/angularpractice/");
 
     await page.locator('input[name="name"]').first().fill("Navya");

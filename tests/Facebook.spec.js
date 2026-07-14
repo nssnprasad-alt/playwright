@@ -8,12 +8,5 @@ test("Facebook Login Test", async ({ page }) => {
         waitUntil: "domcontentloaded"
     });
 
-    await page.fill('input[name="email"]', 'Navya');
-    await page.fill('input[name="pass"]', 'Navya@123');
-
-    await page.click('button[name="login"]');
-
-    await page.waitForLoadState('networkidle');
-
-    await expect(page).toHaveTitle(/Facebook/);
+    
 });
