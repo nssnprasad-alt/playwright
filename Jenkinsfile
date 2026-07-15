@@ -1,40 +1,48 @@
 pipeline {
+
     agent any
 
     stages {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/nssnprasad-alt/playwright.git'
+                git branch: 'master',
+                    url: 'https://github.com/nssnprasad-alt/playwright.git'
             }
         }
 
         stage('Install Dependencies') {
             steps {
-                bat 'npm ci'
+                bat 'npm install'
             }
         }
 
-        stage('Install Browsers') {
+        stage('Install Playwright Browsers') {
             steps {
-                bat 'npx playwright install --with-deps'
+                bat 'npx playwright install'
             }
         }
 
-        stage('Run Tests') {
+        stage('Run Playwright Tests') {
             steps {
-                bat 'npx playwright test --reporter=html'
+                bat 'npx playwright test'
             }
         }
+    }
 
-        stage('Publish Report') {
-            steps {
-                publishHTML([
-                    reportDir: 'playwright-report',
-                    reportFiles: 'index.html',
-                    reportName: 'Playwright Report'
-                ])
-            }
+    post {
+        always {
+
+            publishHTML(target: [
+                allowMissing: true,
+                alwaysLinkToLastBuild: true,
+                keepAll: true,
+                reportDir: 'playwright-report',
+                reportFiles: 'index.html',
+                reportName: 'Playwright HTML Report'
+            ])
+
+            archiveArtifacts artifacts: 'playwright-report/**', fingerprint: true
         }
     }
 }
